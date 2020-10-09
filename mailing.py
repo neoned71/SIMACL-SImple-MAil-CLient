@@ -58,8 +58,8 @@ mail_file=open("./message.txt","r")
 mail_message=mail_file.read()
 
 
-my_email = "sharmanshuma@gmail.com"
-password = "Anshuma0301."
+my_email = "your email@gmail.com"
+password = "yourpassword."
 
 subject="Feature- ‘Decorating your home in a post-COVID world–the antimicrobial materials you need'"
 
@@ -72,9 +72,9 @@ smtp.starttls()
 smtp.ehlo() 
 smtp.login(my_email, password)
 
-email_list = pd.read_excel('contacts/Stylam_.xlsx')
+email_list = pd.read_excel('contacts/testing.xlsx')
 print(email_list.columns)
-names=email_list[' Journalist ']
+names=email_list[' Name ']
 emails=email_list[' Email ']
 
 
